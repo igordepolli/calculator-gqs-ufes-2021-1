@@ -30,13 +30,9 @@ public class CalculatorTest {
     @Test
     public void testOperations() {
         Calculator calculator = new Calculator();
-        float resultAddiction = calculator.addition(9, 2);
-        float resultSubstract = calculator.substract(15, 1);
-        float resultMultiply = calculator.multiply(5, 3);
-        float resultDivision = calculator.division(30, 5);
-        assertEquals(11.0, resultAddiction, 0.001);
-        assertEquals(14.0, resultSubstract, 0.001);
-        assertEquals(15.0, resultMultiply, 0.001);
-        assertEquals(6.0, resultDivision, 0.001);
+        assertEquals(11.0, calculator.addition(9, 2), 0.001);
+        assertEquals(14.0, calculator.substract(15, 1), 0.001);
+        assertEquals(15.0, calculator.multiply(5, 3), 0.001);
+        assertEquals(6.0, calculator.division(30, 5), 0.001);
     }
 }
